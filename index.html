@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Our Wildlife</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>🌍 Save Our Wildlife</h1>
+
+        <video id="wildlifeVideo" controls aria-label="Promotional video about wildlife conservation">
+            <source src="wildlife.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p class="description">
+            Discover the beauty of our planet's endangered species. Witness what our conservation team is doing on the front lines to protect these delicate natural habitats for future generations.
+        </p>
+
+        <button id="toggleBtn" aria-controls="wildlifeVideo">
+            <span class="icon">▶</span> Play Video
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

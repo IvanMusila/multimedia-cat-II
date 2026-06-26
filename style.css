@@ -1,0 +1,96 @@
+/* --- Global Styles & Background --- */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+    /* A gentle, nature-inspired gradient background */
+    background: linear-gradient(135deg, #d3e8e1 0%, #a4c3b2 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* --- Main Content Card --- */
+.container {
+    max-width: 750px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    /* Deeper, softer shadow for a "floating" effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* --- Typography --- */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #1b4332; /* Deep forest green */
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+/* --- Responsive Video --- */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    /* Softened the border and added a subtle shadow to the video */
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    background-color: #000; /* Keeps black bars clean if video aspect ratio varies */
+}
+
+/* --- Interactive Elements (Button) --- */
+button {
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1b4332 0%, #081c15 100%);
+    box-shadow: 0 6px 20px rgba(27, 67, 50, 0.4);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Push down effect when clicked */
+    box-shadow: 0 2px 10px rgba(27, 67, 50, 0.3);
+}
+
+/* Accessibility: Keyboard Focus State */
+button:focus {
+    outline: 3px solid #52b788;
+    outline-offset: 4px;
+}
+
+/* Button Icon */
+.icon {
+    font-size: 0.9rem;
+}
